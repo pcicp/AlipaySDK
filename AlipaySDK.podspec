@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.summary      = 'AlipaySDK'
   spec.source       = { :git => 'https://github.com/pcicp/AlipaySDK.git' }
   spec.vendored_frameworks = 'AlipaySDK/AlipaySDK.framework'
-  spec.resource = 'AlipaySDK/AlipaySDK.bundle'
-  spec.frameworks    = 'SystemConfiguration', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation', 'CFNetwork', 'CoreMotion'
-  spec.libraries = 'c++', 'z'
+  spec.resource     = 'AlipaySDK/AlipaySDK.bundle'
+  spec.frameworks   = 'SystemConfiguration', 'CoreTelephony', 'QuartzCore', 'CoreText', 'CoreGraphics', 'UIKit', 'Foundation', 'CFNetwork', 'CoreMotion'
+  spec.libraries    = 'c++', 'z'
 end
