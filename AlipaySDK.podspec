@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'AlipaySDK'
-  spec.version      = '15.8.06'
+  spec.version      = '15.8.11'
   spec.license      = '杭州蚂蚁金服'
   spec.homepage     = 'https://open.alipay.com'
   spec.authors      = '杭州蚂蚁金服'
