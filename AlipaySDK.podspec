@@ -7,8 +7,7 @@ Pod::Spec.new do |spec|
   spec.summary      = 'AlipaySDK'
   spec.source       = { :git => 'https://github.com/pcicp/AlipaySDK.git' }
   spec.frameworks   = 'CFNetwork', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'CoreText', 'Foundation', 'QuartzCore', 'SystemConfiguration', 'UIKit'
-  spec.libraries    = 'c++', 'z'
-  spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ld_classic' }
+  spec.libraries    = 'c++', 'z', 'd_classic'
   spec.default_subspec = 'Standard'
   spec.subspec 'Standard' do |ss|
     ss.vendored_frameworks = 'Standard/AlipaySDK.framework'
