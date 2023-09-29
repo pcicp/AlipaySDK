@@ -6,8 +6,15 @@ Pod::Spec.new do |spec|
   spec.authors      = '杭州蚂蚁金服'
   spec.summary      = 'AlipaySDK'
   spec.source       = { :git => 'https://github.com/pcicp/AlipaySDK.git' }
-  spec.vendored_frameworks = 'AlipaySDK/AlipaySDK.framework'
-  spec.resource     = 'AlipaySDK/AlipaySDK.bundle'
   spec.frameworks   = 'CFNetwork', 'CoreGraphics', 'CoreMotion', 'CoreTelephony', 'CoreText', 'Foundation', 'QuartzCore', 'SystemConfiguration', 'UIKit'
   spec.libraries    = 'c++', 'z'
+  spec.default_subspec = 'Standard'
+  spec.subspec 'Standard' do |ss|
+    ss.vendored_frameworks = 'Standard/AlipaySDK.framework'
+    ss.resource     = 'Standard/AlipaySDK.bundle'
+  end
+  spec.subspec 'NoUtdid' do |ss|
+    ss.vendored_frameworks = 'NoUtdid/AlipaySDK.framework'
+    ss.resource     = 'NoUtdid/AlipaySDK.bundle'
+  end
 end
